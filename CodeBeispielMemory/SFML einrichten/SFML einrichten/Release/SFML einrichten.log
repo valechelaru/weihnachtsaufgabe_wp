@@ -1,0 +1,19 @@
+﻿Der Buildvorgang wurde am 25.09.2014 14:38:09 gestartet.
+     1>Projekt "c:\Users\Valentin\documents\visual studio 2012\Projects\SFML einrichten\SFML einrichten\SFML einrichten.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Valentin\Documents\SFML-2.1\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(95): warning C4244: 'Argument': Konvertierung von 'int' in 'float', möglicher Datenverlust
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\SFML einrichten.res" "SFML einrichten.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\valentin\documents\visual studio 2012\Projects\SFML einrichten\Release\SFML einrichten.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Valentin\Documents\SFML-2.1\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\valentin\documents\visual studio 2012\Projects\SFML einrichten\Release\SFML einrichten.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\valentin\documents\visual studio 2012\Projects\SFML einrichten\Release\SFML einrichten.lib" /MACHINE:X86 /SAFESEH "Release\SFML einrichten.res"
+         Release\main.obj
+         Code wird generiert.
+         Codegenerierung ist abgeschlossen.
+         SFML einrichten.vcxproj -> c:\users\valentin\documents\visual studio 2012\Projects\SFML einrichten\Release\SFML einrichten.exe
+     1>Die Erstellung des Projekts "c:\Users\Valentin\documents\visual studio 2012\Projects\SFML einrichten\SFML einrichten\SFML einrichten.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:01.32
