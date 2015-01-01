@@ -1,0 +1,13 @@
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\bin\Windows Phone\Debug\Content\set.xnb
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\bin\Windows Phone\Debug\TestXNA_WP.dll
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\bin\Windows Phone\Debug\TestXNA_WP.pdb
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\TestXNA_WP.csprojResolveAssemblyReference.cache
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\TestXNA_WP.dll
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\TestXNA_WP.pdb
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\bin\Windows Phone\Debug\AppManifest.xaml
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\WMAppManifest.xml.g
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\bin\Windows Phone\Debug\TestXNA_WP.xap
+c:\users\valentin\documents\visual studio 2012\Projects\TestXNA_WP\TestXNA_WP\TestXNA_WP\obj\Windows Phone\Debug\XapCacheFile.xml
