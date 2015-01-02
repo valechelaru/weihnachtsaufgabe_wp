@@ -1,0 +1,25 @@
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\Content\mytexture.xnb
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.dll
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.pdb
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.csprojResolveAssemblyReference.cache
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.dll
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.pdb
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\AppManifest.xaml
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml.g
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.xap
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\Content\mytexture.xnb
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.dll
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.pdb
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.csprojResolveAssemblyReference.cache
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.dll
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WindowsPhoneXNA Test1.pdb
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.xap
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\XapCacheFile.xml

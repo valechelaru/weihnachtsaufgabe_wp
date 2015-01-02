@@ -1,0 +1,1 @@
+c:\users\valentin\documents\visual studio 2012\Projects\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1Content\obj\Windows Phone\Debug\WindowsPhoneXNA Test1Content.contentprojResolveAssemblyReference.cache
