@@ -23,3 +23,9 @@ C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnach
 C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml
 C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.xap
 C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\WindowsPhoneXNA Test1.xap
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\WindowsPhoneXNA Test1\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
