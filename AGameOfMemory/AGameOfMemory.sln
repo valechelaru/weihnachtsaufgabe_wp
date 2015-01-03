@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGameOfMemory", "AGameOfMemory\AGameOfMemory\AGameOfMemory.csproj", "{E0D33B6D-B253-45F6-9532-250274A15605}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "AGameOfMemoryContent", "AGameOfMemory\AGameOfMemoryContent\AGameOfMemoryContent.contentproj", "{7DB28A78-A223-4731-BB57-873EABDEFB5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E0D33B6D-B253-45F6-9532-250274A15605}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{7DB28A78-A223-4731-BB57-873EABDEFB5A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{7DB28A78-A223-4731-BB57-873EABDEFB5A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\set.xnb
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.dll
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.pdb
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.dll
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.pdb
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml.g
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
