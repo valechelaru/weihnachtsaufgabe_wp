@@ -21,6 +21,9 @@ namespace MyFirstGame
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        float rotationAngle = 0;
+        Vector2 origin;
+        bool hitCat = false;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -127,16 +130,30 @@ namespace MyFirstGame
                 spriteSpeed.Y *= -1;
                 spritePosition.Y = MinY;
             }
+
+            //now we need to detect a click event
+            Rectangle tempRect = new Rectangle((int) (spritePosition.X - myTexture.Width/2), (int) (spritePosition.Y - myTexture.Height/2), myTexture.Width, myTexture.Height);
+            MouseState ms = Mouse.GetState();
+            hitCat = tempRect.Intersects(new Rectangle(ms.X,ms.Y,1,1));
+
+            if ( hitCat == true && ms.LeftButton == ButtonState.Pressed)
+            {
+                rotationAngle += (float) Math.PI / 36;
+                hitCat = false;
+            }
+            
         }
 
         protected override void Draw(GameTime gameTime)
         {
             graphics.GraphicsDevice.Clear(Color.Pink);
             //graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            
+            origin.X = myTexture.Width / 2;
+            origin.Y = myTexture.Height / 2;
             // Draw the sprite.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.Draw(myTexture, spritePosition, Color.White);
+            spriteBatch.Draw(myTexture, spritePosition, null, Color.White, rotationAngle,origin, 1.0f, SpriteEffects.None, 0f);
             spriteBatch.End();
 
             base.Draw(gameTime);
