@@ -10,21 +10,10 @@ D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Pho
 bin\Windows Phone\Debug\
 D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
 D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\set.xnb
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.dll
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.pdb
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.csprojResolveAssemblyReference.cache
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.dll
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.pdb
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.csprojResolveAssemblyReference.cache
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml.g
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml
 bin\Windows Phone\Debug\

@@ -1,1 +1,1 @@
-C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemoryContent\obj\Windows Phone\Debug\AGameOfMemoryContent.contentprojResolveAssemblyReference.cache
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemoryContent\obj\Windows Phone\Debug\AGameOfMemoryContent.contentprojResolveAssemblyReference.cache

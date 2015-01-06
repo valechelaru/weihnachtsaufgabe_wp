@@ -23,7 +23,12 @@ namespace AGameOfMemory
         const int WIDTH = 6;
         const int HEIGHT = 4;
 
-        int frameWidth = 16;
+
+        const int frameWidth = 16;
+        //const int coverWidth = 64;
+
+
+
         int[] gezogeneKarte = new int[12];
         int cardselected = 0;
 
@@ -53,6 +58,9 @@ namespace AGameOfMemory
         /// </summary>
         protected override void Initialize()
         {
+            
+
+
             // TODO: Fügen Sie Ihre Initialisierungslogik hier hinzu
             for (int y = 0; y < HEIGHT; y++)
             {
@@ -139,6 +147,25 @@ namespace AGameOfMemory
         /// <param name="gameTime">Bietet einen Schnappschuss der Timing-Werte.</param>
         protected override void Draw(GameTime gameTime)
         {
+
+            // Graphic infos
+            int screenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            int screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+
+            double totalWidth = 0.8 * screenHeight / 6;
+            int coverWidth = (int) Math.Floor(totalWidth / 16.0) * 16;
+
+            //setting spielfeld display
+            /// ACHTUNG!!! da wir im Querformat sind, muss hier widht und height vertauscht werden!!
+            double coverSizeW = 0.8 * screenHeight / 6;
+            double coverSizeH = screenWidth / 4;
+
+            double abstandX = (0.8 * screenHeight - 6 * coverWidth) / 7;
+            double abstandY = (screenWidth - 4 * coverWidth) / 5;
+
+            int intAbstandX = (int)Math.Round(abstandX);
+            int intAbstandY = (int)Math.Round(abstandY);
+
             GraphicsDevice.Clear(Color.Pink);
 
             // TODO: Fügen Sie Ihren Zeichnungscode hier hinzu
@@ -149,7 +176,14 @@ namespace AGameOfMemory
             {
                 for (int y = 0; y < HEIGHT; y++)
                 {
-                    spriteBatch.Draw(myTexture, new Rectangle((int) 72 * x + 16, (int) 72 * y + 16, 64, 64), new Rectangle((int)spielfeld[y, x].id * 16, 0, 16, 16), Color.White);
+                    if (spielfeld[y, x].show == true)
+                    {
+                        spriteBatch.Draw(myTexture, new Rectangle((int)(coverWidth + intAbstandX) * x + intAbstandX, (int)(coverWidth + intAbstandY) * y + intAbstandY, coverWidth, coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White);
+                    }
+                    else
+                    {
+                        spriteBatch.Draw(myTexture, new Rectangle((int)(coverWidth + intAbstandX) * x + intAbstandX, (int)(coverWidth + intAbstandY) * y + intAbstandY, coverWidth, coverWidth), new Rectangle(12 * frameWidth, 0, frameWidth, frameWidth), Color.White);
+                    }
                 }
             }
             
