@@ -31,6 +31,9 @@ namespace AGameOfMemory
 
         int[] gezogeneKarte = new int[12];
         int cardselected = 0;
+        Vector2 selectedCard1 = new Vector2();
+        Vector2 selectedCard2 = new Vector2();
+        bool canClick = true;
 
         Karte[,] spielfeld = new Karte[HEIGHT, WIDTH];
 
@@ -138,7 +141,60 @@ namespace AGameOfMemory
 
         void UpdateSprite(GameTime gameTime)
         {
+            MouseState ms = Mouse.GetState();
 
+            DisplaySettings displaySettings = getDisplayInfo();
+            for (int x = 0; x < WIDTH; x++)
+            {
+                for (int y = 0; y < HEIGHT; y++)
+                {
+                    Rectangle tempRec = new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY, displaySettings.coverWidth, displaySettings.coverWidth);
+
+                    bool cardClick = tempRec.Intersects(new Rectangle(ms.X, ms.Y, 1, 1));
+                    bool canClick = true;
+                    if (canClick && cardClick && ms.LeftButton == ButtonState.Pressed && !spielfeld[y,x].show)
+                    {
+                        cardIsClicked(y, x);
+                        canClick = false;
+                    }
+                    else if (ms.LeftButton == ButtonState.Released)
+                    {
+                        canClick = true;
+                    }
+                }
+            }
+
+        }
+
+        ///Hier wird die ausgewählte Karte aufgedeckt
+        void cardIsClicked(int y, int x)
+        {
+            if (cardselected == 2)
+            {
+                cardselected = 0;
+                spielfeld[(int) selectedCard1.Y, (int) selectedCard1.X].show = false;
+                spielfeld[(int) selectedCard2.Y, (int) selectedCard2.X].show = false;
+            }
+
+            if (cardselected == 0)
+            {
+                cardselected++;
+                spielfeld[y, x].show = true;
+                selectedCard1.X = x;
+                selectedCard1.Y = y;
+            }
+
+            else if (cardselected == 1)
+            {
+                cardselected++;
+                spielfeld[y, x].show = true;
+                selectedCard2.X = x;
+                selectedCard2.Y = y;
+                if (spielfeld[(int) selectedCard1.Y, (int) selectedCard1.X].id == spielfeld[(int) selectedCard2.Y, (int) selectedCard2.X].id)
+                {
+                    cardselected = 0;
+                }                 
+            }
         }
 
         /// <summary>
@@ -147,24 +203,7 @@ namespace AGameOfMemory
         /// <param name="gameTime">Bietet einen Schnappschuss der Timing-Werte.</param>
         protected override void Draw(GameTime gameTime)
         {
-
-            // Graphic infos
-            int screenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
-            int screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
-
-            double totalWidth = 0.8 * screenHeight / 6;
-            int coverWidth = (int) Math.Floor(totalWidth / 16.0) * 16;
-
-            //setting spielfeld display
-            /// ACHTUNG!!! da wir im Querformat sind, muss hier widht und height vertauscht werden!!
-            double coverSizeW = 0.8 * screenHeight / 6;
-            double coverSizeH = screenWidth / 4;
-
-            double abstandX = (0.8 * screenHeight - 6 * coverWidth) / 7;
-            double abstandY = (screenWidth - 4 * coverWidth) / 5;
-
-            int intAbstandX = (int)Math.Round(abstandX);
-            int intAbstandY = (int)Math.Round(abstandY);
+            DisplaySettings displaySettings = getDisplayInfo();
 
             GraphicsDevice.Clear(Color.Pink);
 
@@ -178,11 +217,11 @@ namespace AGameOfMemory
                 {
                     if (spielfeld[y, x].show == true)
                     {
-                        spriteBatch.Draw(myTexture, new Rectangle((int)(coverWidth + intAbstandX) * x + intAbstandX, (int)(coverWidth + intAbstandY) * y + intAbstandY, coverWidth, coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White);
+                        spriteBatch.Draw(myTexture, new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY, displaySettings.coverWidth, displaySettings.coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White);
                     }
                     else
                     {
-                        spriteBatch.Draw(myTexture, new Rectangle((int)(coverWidth + intAbstandX) * x + intAbstandX, (int)(coverWidth + intAbstandY) * y + intAbstandY, coverWidth, coverWidth), new Rectangle(12 * frameWidth, 0, frameWidth, frameWidth), Color.White);
+                        spriteBatch.Draw(myTexture, new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY, displaySettings.coverWidth, displaySettings.coverWidth), new Rectangle(12 * frameWidth, 0, frameWidth, frameWidth), Color.White);
                     }
                 }
             }
@@ -190,6 +229,30 @@ namespace AGameOfMemory
             spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        /// Hier kommt die Einstellung für die jeweiligen Displays
+        DisplaySettings getDisplayInfo()
+        {
+            DisplaySettings displaySettings = new DisplaySettings();
+
+                // Graphic infos
+                displaySettings.screenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+                displaySettings.screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+
+                double totalWidth = 0.8 * displaySettings.screenHeight / 6;
+                displaySettings.coverWidth = (int)Math.Floor(totalWidth / 16.0) * 16;
+
+                //setting spielfeld display
+                /// ACHTUNG!!! da wir im Querformat sind, muss hier widht und height vertauscht werden!!
+
+                double abstandX = (0.8 * displaySettings.screenHeight - 6 * displaySettings.coverWidth) / 7;
+                double abstandY = (displaySettings.screenWidth - 4 * displaySettings.coverWidth) / 5;
+
+                displaySettings.intAbstandX = (int)Math.Round(abstandX);
+                displaySettings.intAbstandY = (int)Math.Round(abstandY);            
+
+            return displaySettings;
         }
     }
 }

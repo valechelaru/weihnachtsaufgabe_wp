@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\set.xnb</Output>
-      <Time>2015-01-03T18:01:44.0518427+01:00</Time>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\set.xnb</Output>
+      <Time>2015-01-03T13:43:16+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -17,10 +17,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemoryContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Valentin\Documents\GitProjekte\Windows Phone\Weihnachtsaufgabe\weihnachtsaufgabe_wp\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemoryContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -49,7 +49,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-10-13T16:37:57.2345449+02:00</Value>
+        <Value>2014-10-13T16:31:33.2218796+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
