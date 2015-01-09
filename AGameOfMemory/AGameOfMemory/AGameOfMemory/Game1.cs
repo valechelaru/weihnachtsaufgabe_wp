@@ -17,6 +17,7 @@ namespace AGameOfMemory
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        //Graphics Kram, SpielDefinitionen
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
@@ -26,7 +27,7 @@ namespace AGameOfMemory
 
         const int frameWidth = 16;
         //const int coverWidth = 64;
-
+        Vector2 origin;
 
 
         int[] gezogeneKarte = new int[12];
@@ -34,11 +35,21 @@ namespace AGameOfMemory
         Vector2 selectedCard1 = new Vector2();
         Vector2 selectedCard2 = new Vector2();
         bool canClick = true;
+        int numOfAttempts = 0;
 
         Karte[,] spielfeld = new Karte[HEIGHT, WIDTH];
 
         Random rnd = new Random();
 
+        //Textdarstellung
+        SpriteBatch spriteBatchText;
+        SpriteFont font;
+        Color fontColor;
+        string text = "Attempts:\n";
+        float textPosX;
+        float textPosY;
+
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -82,6 +93,7 @@ namespace AGameOfMemory
                             neueKarte.show = false;
                             gezogeneKarte[tempnum] += 1;
                             spielfeld[y, x] = neueKarte;
+                            spielfeld[y, x].rotationAngle = 0;
                             done = true;
                         }
 
@@ -108,6 +120,9 @@ namespace AGameOfMemory
             // Erstellen Sie einen neuen SpriteBatch, der zum Zeichnen von Texturen verwendet werden kann.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             myTexture = Content.Load<Texture2D>("set");
+
+            spriteBatchText = new SpriteBatch(GraphicsDevice);
+            font = Content.Load<SpriteFont>("SpriteFont1");
             // TODO: Verwenden Sie this.Content, um Ihren Spiel-Inhalt hier zu laden
         }
 
@@ -172,6 +187,7 @@ namespace AGameOfMemory
             if (cardselected == 2)
             {
                 cardselected = 0;
+                numOfAttempts++;
                 spielfeld[(int) selectedCard1.Y, (int) selectedCard1.X].show = false;
                 spielfeld[(int) selectedCard2.Y, (int) selectedCard2.X].show = false;
             }
@@ -193,6 +209,9 @@ namespace AGameOfMemory
                 if (spielfeld[(int) selectedCard1.Y, (int) selectedCard1.X].id == spielfeld[(int) selectedCard2.Y, (int) selectedCard2.X].id)
                 {
                     cardselected = 0;
+                    numOfAttempts++;
+                    spielfeld[(int) selectedCard1.Y, (int)selectedCard1.X].solved = true;
+                    spielfeld[(int)selectedCard2.Y, (int)selectedCard2.X].solved = true;
                 }                 
             }
         }
@@ -211,13 +230,26 @@ namespace AGameOfMemory
 
             // Draw the sprite.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            // Draw Spielfeld
             for(int x = 0; x < WIDTH; x++)
             {
                 for (int y = 0; y < HEIGHT; y++)
                 {
                     if (spielfeld[y, x].show == true)
                     {
-                        spriteBatch.Draw(myTexture, new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY, displaySettings.coverWidth, displaySettings.coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White);
+                        if (spielfeld[y, x].solved == true)
+                        {
+                            spielfeld[y, x].rotationAngle += (float)Math.PI / 30;
+                            if (spielfeld[y, x].rotationAngle >= 2 * Math.PI)
+                            {
+                                spielfeld[y, x].solved = false;
+                                spielfeld[y, x].rotationAngle = 0;
+                            }
+                        }
+                        origin.X =  frameWidth / 2;
+                        origin.Y =  frameWidth / 2;
+                        spriteBatch.Draw(myTexture, new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX + displaySettings.coverWidth / 2, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY + displaySettings.coverWidth / 2, displaySettings.coverWidth, displaySettings.coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White, spielfeld[y, x].rotationAngle, origin, SpriteEffects.None, 0);
+                        //spriteBatch.Draw(myTexture, new Rectangle((int)(displaySettings.coverWidth + displaySettings.intAbstandX) * x + displaySettings.intAbstandX, (int)(displaySettings.coverWidth + displaySettings.intAbstandY) * y + displaySettings.intAbstandY, displaySettings.coverWidth, displaySettings.coverWidth), new Rectangle((int)spielfeld[y, x].id * frameWidth, 0, frameWidth, frameWidth), Color.White);
                     }
                     else
                     {
@@ -225,7 +257,13 @@ namespace AGameOfMemory
                     }
                 }
             }
+            //Draw Text
+            textPosX = (float) 0.8 * displaySettings.screenHeight;
+            textPosY = displaySettings.intAbstandY;
+            Vector2 textPosition = new Vector2(textPosX, textPosY);
+            spriteBatch.DrawString(font, text + numOfAttempts.ToString(), textPosition, Color.Black);
             
+
             spriteBatch.End();
 
             base.Draw(gameTime);

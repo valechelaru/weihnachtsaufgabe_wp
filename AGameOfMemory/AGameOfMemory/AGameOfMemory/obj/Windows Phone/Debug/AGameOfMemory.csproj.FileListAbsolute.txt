@@ -11,3 +11,10 @@ bin\Windows Phone\Debug\
 D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
 D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
 D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\AGameOfMemory.csprojResolveAssemblyReference.cache
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\SpriteFont1.xnb
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\XapCacheFile.xml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml.g
+D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\

@@ -11,6 +11,10 @@ namespace AGameOfMemory
 
         private bool _show;
 
+        private bool _solved;
+
+        private float _rotationAngle;
+
         public int id
         {
             get
@@ -35,5 +39,28 @@ namespace AGameOfMemory
             }
         }
 
+        public bool solved
+        {
+            get
+            {
+                return _solved;
+            }
+            set
+            {
+                _solved = value;
+            }
+        }
+
+        public float rotationAngle
+        {
+            get
+            {
+                return _rotationAngle;
+            }
+            set
+            {
+                _rotationAngle = value;
+            }
+        }
     }
 }
