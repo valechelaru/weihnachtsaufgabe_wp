@@ -49,6 +49,10 @@ namespace AGameOfMemory
         float textPosX;
         float textPosY;
 
+        //timer
+        float timer = 0;
+        bool gameStarted = false;
+        int numOfSolvedPairs = 0;
         
         public Game1()
         {
@@ -147,6 +151,11 @@ namespace AGameOfMemory
                 this.Exit();
 
             // TODO: Fügen Sie Ihre Aktualisierungslogik hier hinzu
+            //timer
+            if (gameStarted)
+            {
+                timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
             
             // Move the sprite around.
             UpdateSprite(gameTime);
@@ -210,9 +219,19 @@ namespace AGameOfMemory
                 {
                     cardselected = 0;
                     numOfAttempts++;
+                    numOfSolvedPairs++;
                     spielfeld[(int) selectedCard1.Y, (int)selectedCard1.X].solved = true;
                     spielfeld[(int)selectedCard2.Y, (int)selectedCard2.X].solved = true;
                 }                 
+            }
+            //for the timer to stop
+            if (numOfSolvedPairs < 12)
+            {
+                gameStarted = true;
+            }
+            else
+            {
+                gameStarted = false;
             }
         }
 
@@ -261,8 +280,7 @@ namespace AGameOfMemory
             textPosX = (float) 0.8 * displaySettings.screenHeight;
             textPosY = displaySettings.intAbstandY;
             Vector2 textPosition = new Vector2(textPosX, textPosY);
-            spriteBatch.DrawString(font, text + numOfAttempts.ToString(), textPosition, Color.Black);
-            
+            spriteBatch.DrawString(font, text + numOfAttempts.ToString() + "\nTime:\n" + timer.ToString("0.00") + " s", textPosition, Color.Black);
 
             spriteBatch.End();
 
