@@ -1,9 +1,11 @@
-﻿<xapCache source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="10.01.2015 16:35:04">
+﻿<xapCache source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="10.01.2015 18:47:52">
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\Background.png" archivePath="Background.png" lastWriteTime="03.01.2015 15:45:14" />
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\PhoneGameThumb.png" archivePath="PhoneGameThumb.png" lastWriteTime="03.01.2015 15:45:14" />
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03.01.2015 17:39:54" />
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03.01.2015 15:49:10" />
-  <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.dll" archivePath="AGameOfMemory.dll" lastWriteTime="10.01.2015 16:35:04" />
+  <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\AGameOfMemory.dll" archivePath="AGameOfMemory.dll" lastWriteTime="10.01.2015 18:47:52" />
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\set.xnb" archivePath="Content\set.xnb" lastWriteTime="07.01.2015 19:45:46" />
   <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\SpriteFont1.xnb" archivePath="Content\SpriteFont1.xnb" lastWriteTime="09.01.2015 19:26:37" />
+  <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\restartButton.xnb" archivePath="Content\restartButton.xnb" lastWriteTime="10.01.2015 18:32:03" />
+  <file source="D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\restartButtonBright.xnb" archivePath="Content\restartButtonBright.xnb" lastWriteTime="10.01.2015 18:32:03" />
 </xapCache>

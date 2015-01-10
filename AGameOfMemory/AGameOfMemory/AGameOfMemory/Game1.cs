@@ -53,6 +53,16 @@ namespace AGameOfMemory
         float timer = 0;
         bool gameStarted = false;
         int numOfSolvedPairs = 0;
+
+        //Buttons
+        Button restart;
+        float button1PosX;
+        float button1PosY;
+        float button1Width;
+        float button1Height;
+
+        Button showHighscore;
+
         
         public Game1()
         {
@@ -76,10 +86,14 @@ namespace AGameOfMemory
         /// </summary>
         protected override void Initialize()
         {
-            
-
-
             // TODO: Fügen Sie Ihre Initialisierungslogik hier hinzu
+            shuffleCards();
+
+            base.Initialize();
+        }
+
+        void shuffleCards()
+        {
             for (int y = 0; y < HEIGHT; y++)
             {
                 for (int x = 0; x < WIDTH; x++)
@@ -105,12 +119,21 @@ namespace AGameOfMemory
 
                 }
             }
+        }
 
-            base.Initialize();
+        void resetDeck()
+        {
+            for (int y = 0; y < 12; y++)
+            {
+                gezogeneKarte[y] = 0;
+            }
+            shuffleCards();
         }
 
         // This is a texture we can render.
         Texture2D myTexture;
+        Texture2D simpleTexture;
+        Texture2D restartButtonTexture;
 
         // Set the coordinates to draw the sprite at.
         Vector2 spritePosition = Vector2.Zero;
@@ -125,8 +148,13 @@ namespace AGameOfMemory
             spriteBatch = new SpriteBatch(GraphicsDevice);
             myTexture = Content.Load<Texture2D>("set");
 
-            spriteBatchText = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("SpriteFont1");
+
+            simpleTexture = new Texture2D(GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
+            Int32[] pixel = { 0xFFFFFF };
+            simpleTexture.SetData<Int32>(pixel, 0, simpleTexture.Width * simpleTexture.Height);
+
+            restartButtonTexture = Content.Load<Texture2D>("restartButton");
             // TODO: Verwenden Sie this.Content, um Ihren Spiel-Inhalt hier zu laden
         }
 
@@ -168,6 +196,7 @@ namespace AGameOfMemory
             MouseState ms = Mouse.GetState();
 
             DisplaySettings displaySettings = getDisplayInfo();
+            //detect click on cards
             for (int x = 0; x < WIDTH; x++)
             {
                 for (int y = 0; y < HEIGHT; y++)
@@ -186,6 +215,17 @@ namespace AGameOfMemory
                         canClick = true;
                     }
                 }
+            }
+            //detect click on buttons
+            Rectangle resetRectangle = new Rectangle((int)button1PosX, (int)button1PosY, (int)button1Width, (int)button1Height);
+            bool hitReset = resetRectangle.Intersects(new Rectangle(ms.X, ms.Y, 1, 1));
+
+            if (hitReset)
+            {
+                resetDeck();
+                timer = 0;
+                numOfAttempts = 0;
+                numOfSolvedPairs = 0;                    
             }
 
         }
@@ -243,12 +283,21 @@ namespace AGameOfMemory
         {
             DisplaySettings displaySettings = getDisplayInfo();
 
-            GraphicsDevice.Clear(Color.Pink);
+            GraphicsDevice.Clear(Color.DarkOrange);
 
             // TODO: Fügen Sie Ihren Zeichnungscode hier hinzu
 
             // Draw the sprite.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+
+            // draw background rectangle
+            int linePos = Convert.ToInt32(displaySettings.screenHeight * 0.8);
+            spriteBatch.Draw(simpleTexture, new Rectangle(0, 0, displaySettings.screenHeight, displaySettings.lineWidth), null, Color.White, 0, new Vector2(0, 0), SpriteEffects.None, 0);
+            spriteBatch.Draw(simpleTexture, new Rectangle(0, 0, displaySettings.lineWidth, displaySettings.screenWidth), null, Color.White, 0, new Vector2(0, 0), SpriteEffects.None, 0);
+            spriteBatch.Draw(simpleTexture, new Rectangle(0, displaySettings.screenWidth - displaySettings.lineWidth, displaySettings.screenHeight, displaySettings.lineWidth), null, Color.White, 0, new Vector2(0, 0), SpriteEffects.None, 0);
+            spriteBatch.Draw(simpleTexture, new Rectangle(displaySettings.screenHeight - displaySettings.lineWidth, 0, displaySettings.lineWidth, displaySettings.screenWidth), null, Color.White, 0, new Vector2(0, 0), SpriteEffects.None, 0);
+            spriteBatch.Draw(simpleTexture, new Rectangle(linePos - displaySettings.lineWidth, 0, displaySettings.lineWidth, displaySettings.screenWidth), null, Color.White, 0, new Vector2(0, 0), SpriteEffects.None, 0);
+
             // Draw Spielfeld
             for(int x = 0; x < WIDTH; x++)
             {
@@ -277,11 +326,19 @@ namespace AGameOfMemory
                 }
             }
             //Draw Text
-            textPosX = (float) 0.8 * displaySettings.screenHeight;
+            textPosX = (float) 0.8 * displaySettings.screenHeight + displaySettings.lineWidth;
             textPosY = displaySettings.intAbstandY;
             Vector2 textPosition = new Vector2(textPosX, textPosY);
             spriteBatch.DrawString(font, text + numOfAttempts.ToString() + "\nTime:\n" + timer.ToString("0.00") + " s", textPosition, Color.Black);
 
+            //Draw Buttons
+            button1PosX = (float) (displaySettings.screenHeight * 0.8 + 2 * displaySettings.lineWidth);
+            button1PosY = (float) (displaySettings.screenWidth * 0.5);
+            button1Width = (float) (displaySettings.screenHeight * 0.2 - 5 * displaySettings.lineWidth);
+            button1Height = (float) (button1Width / 2.8);
+
+            spriteBatch.Draw(restartButtonTexture, new Rectangle((int)button1PosX, (int)button1PosY, (int)button1Width, (int)button1Height), new Rectangle(0,0,140,50), Color.White);
+            
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -306,7 +363,9 @@ namespace AGameOfMemory
                 double abstandY = (displaySettings.screenWidth - 4 * displaySettings.coverWidth) / 5;
 
                 displaySettings.intAbstandX = (int)Math.Round(abstandX);
-                displaySettings.intAbstandY = (int)Math.Round(abstandY);            
+                displaySettings.intAbstandY = (int)Math.Round(abstandY);
+
+                displaySettings.lineWidth = (int)displaySettings.screenHeight / 200;
 
             return displaySettings;
         }

@@ -12,6 +12,7 @@ namespace AGameOfMemory
         private int _coverWidth;
         private int _intAbstandX;
         private int _intAbstandY;
+        private int _lineWidth;
 
         public int screenWidth
         {
@@ -76,6 +77,19 @@ namespace AGameOfMemory
             {
                 _intAbstandY = value;
             }
-        }        
+        }
+
+        public int lineWidth
+        {
+            get
+            {
+                return _lineWidth;
+            }
+
+            set
+            {
+                _lineWidth = value;
+            }
+        }
     }
 }

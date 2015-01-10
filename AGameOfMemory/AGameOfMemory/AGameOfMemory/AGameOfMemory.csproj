@@ -64,6 +64,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Button.cs" />
     <Compile Include="DisplaySettings.cs" />
     <Compile Include="Karte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
