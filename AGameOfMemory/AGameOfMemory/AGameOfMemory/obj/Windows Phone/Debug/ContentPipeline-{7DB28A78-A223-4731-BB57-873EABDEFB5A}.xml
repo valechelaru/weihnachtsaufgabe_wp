@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\restartButton.xnb</Output>
-      <Time>2015-01-10T18:25:09+01:00</Time>
+      <Time>2015-01-11T16:32:43.3253809+01:00</Time>
     </Item>
     <Item>
       <Source>restartButtonBright.png</Source>
@@ -35,7 +35,43 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\restartButtonBright.xnb</Output>
-      <Time>2015-01-10T18:25:53+01:00</Time>
+      <Time>2015-01-11T16:35:26.8208002+01:00</Time>
+    </Item>
+    <Item>
+      <Source>highscoreButton.png</Source>
+      <Name>highscoreButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\highscoreButton.xnb</Output>
+      <Time>2015-01-11T16:39:23+01:00</Time>
+    </Item>
+    <Item>
+      <Source>highscoreButtonBright.png</Source>
+      <Name>highscoreButtonBright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\highscoreButtonBright.xnb</Output>
+      <Time>2015-01-11T16:39:34+01:00</Time>
+    </Item>
+    <Item>
+      <Source>backButton.png</Source>
+      <Name>backButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\backButton.xnb</Output>
+      <Time>2015-01-11T20:49:45+01:00</Time>
+    </Item>
+    <Item>
+      <Source>backButtonBright.png</Source>
+      <Name>backButtonBright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\backButtonBright.xnb</Output>
+      <Time>2015-01-11T20:49:59+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

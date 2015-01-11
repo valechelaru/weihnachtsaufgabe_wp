@@ -27,7 +27,7 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>AGameOfMemory</Title>
+          <Title>A Game of Memory</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

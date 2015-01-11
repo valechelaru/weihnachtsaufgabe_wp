@@ -2,3 +2,7 @@ Content\set.xnb
 Content\SpriteFont1.xnb
 Content\restartButton.xnb
 Content\restartButtonBright.xnb
+Content\highscoreButton.xnb
+Content\highscoreButtonBright.xnb
+Content\backButton.xnb
+Content\backButtonBright.xnb
