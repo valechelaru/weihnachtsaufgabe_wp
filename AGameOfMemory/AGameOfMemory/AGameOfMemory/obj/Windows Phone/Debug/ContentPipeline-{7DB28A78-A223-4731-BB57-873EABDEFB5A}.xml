@@ -73,6 +73,24 @@
       <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\backButtonBright.xnb</Output>
       <Time>2015-01-11T20:49:59+01:00</Time>
     </Item>
+    <Item>
+      <Source>Tile.png</Source>
+      <Name>Tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\Tile.xnb</Output>
+      <Time>2015-01-11T22:07:02+01:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreen.png</Source>
+      <Name>SplashScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Dropbox\WPApp\trunk\AGameOfMemory\AGameOfMemory\AGameOfMemory\bin\Windows Phone\Debug\Content\SplashScreen.xnb</Output>
+      <Time>2015-01-11T22:41:41.1764613+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{7DB28A78-A223-4731-BB57-873EABDEFB5A}</ContentProjectGUID>

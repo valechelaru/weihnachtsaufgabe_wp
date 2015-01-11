@@ -24,6 +24,18 @@ namespace AGameOfMemory
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        // This is a texture we can render.
+        Texture2D myTexture;
+        Texture2D simpleTexture;
+        Texture2D restartButtonTexture;
+        Texture2D highscoreButtonTexture;
+        Texture2D backButtonTexture;
+        Texture2D splashScreen;
+
+        // Set the coordinates to draw the sprite at.
+        Vector2 spritePosition = Vector2.Zero;
+
+        //rate my app helpers
         public static bool rateMyApp = false;
         int rateCounter;
 
@@ -36,6 +48,7 @@ namespace AGameOfMemory
         //Graphics Kram, SpielDefinitionen
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteBatch spriteBatchSplash;
         
         const int WIDTH = 6;
         const int HEIGHT = 4;
@@ -87,6 +100,7 @@ namespace AGameOfMemory
         float button3PosY;
         float button3Width;
         float button3Height;
+
 
         public Game1()
         {
@@ -214,22 +228,20 @@ namespace AGameOfMemory
             shuffleCards();
         }
 
-        // This is a texture we can render.
-        Texture2D myTexture;
-        Texture2D simpleTexture;
-        Texture2D restartButtonTexture;
-        Texture2D highscoreButtonTexture;
-        Texture2D backButtonTexture;
-
-        // Set the coordinates to draw the sprite at.
-        Vector2 spritePosition = Vector2.Zero;
-
         /// <summary>
         /// LoadContent wird einmal pro Spiel aufgerufen und ist der Platz, wo
         /// Ihr gesamter Content geladen wird.
         /// </summary>
         protected override void LoadContent()
-        {
+        {            
+            //show SplashScreenImage
+            spriteBatchSplash = new SpriteBatch(GraphicsDevice);
+            splashScreen = Content.Load<Texture2D>("SplashScreen");
+            spriteBatchSplash.Begin();
+            spriteBatchSplash.Draw(splashScreen, new Vector2(0, 0), Color.White);
+            spriteBatchSplash.End();
+            GraphicsDevice.Present();
+
             // Erstellen Sie einen neuen SpriteBatch, der zum Zeichnen von Texturen verwendet werden kann.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             myTexture = Content.Load<Texture2D>("set");
@@ -580,8 +592,9 @@ namespace AGameOfMemory
             List<HighScoreEntry> ordered = HighscoreList.OrderBy(f => f.score).ToList();
             HighscoreList = ordered;
             HighscoreList.Reverse();
+
             
-            for (int i = 0; i < HighscoreList.Count; i++)
+            for (int i = 0; i < HighscoreList.Count && i < 5; i++)
 			{
 			    highscoreEntryStringName += HighscoreList[i].name + "\n";
                 highscoreEntryStringScore += HighscoreList[i].score.ToString("0.") + "\n";
