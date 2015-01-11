@@ -347,7 +347,7 @@ namespace AGameOfMemory
             if (hitBack)
             {
                 displayHighscore = false;
-                if (timer > 0)
+                if (timer > 0 && numOfSolvedPairs != 12)
                 {
                     gameStarted = true;
                 }                
@@ -594,9 +594,9 @@ namespace AGameOfMemory
             HighscoreList.Reverse();
 
             
-            for (int i = 0; i < HighscoreList.Count && i < 5; i++)
+            for (int i = 0; i < HighscoreList.Count && i < 9; i++)
 			{
-			    highscoreEntryStringName += HighscoreList[i].name + "\n";
+			    highscoreEntryStringName += (i+1).ToString() + ". " + HighscoreList[i].name + "\n";
                 highscoreEntryStringScore += HighscoreList[i].score.ToString("0.") + "\n";
 			}
         }
@@ -604,7 +604,8 @@ namespace AGameOfMemory
         private void showKeyboard()
         {
 
-            kbResult = Guide.BeginShowKeyboardInput(PlayerIndex.One,"Here's your Keyboard", "Type something...",((typedText == null) ? "" : typedText),GetTypedChars, null);
+            kbResult = Guide.BeginShowKeyboardInput(PlayerIndex.One, "Congratulations! You solved the Memory!", "It took you " + timer.ToString("0.00") + "s and " + numOfAttempts.ToString() + " attempts.\nYou scored the fantastic amount of " + (100000 - timer*100 - numOfAttempts*1000).ToString("0.") + " Points!" 
+                ,((typedText == null) ? "" : typedText),GetTypedChars, null);
         }
 
         protected void GetTypedChars(IAsyncResult r)
